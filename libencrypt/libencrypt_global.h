@@ -1,0 +1,12 @@
+#ifndef LIBENCRYPT_GLOBAL_H
+#define LIBENCRYPT_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(LIBENCRYPT_LIBRARY)
+#  define LIBENCRYPTSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define LIBENCRYPTSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // LIBENCRYPT_GLOBAL_H
